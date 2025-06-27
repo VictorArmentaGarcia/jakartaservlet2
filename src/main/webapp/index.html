@@ -5,7 +5,17 @@
     <body>
         <a href="http://localhost:8080/jakartaee_servelet/parametro_servlet?nombre=victor&apellido=armenta&edad=31">Click on here</a>
 
+        <h3>Formulario de usuarios</h3>
 
+        <form action="/jakartaee_servelet/post_servlet" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" max="120"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
 
 
     </body>
